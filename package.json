@@ -1,0 +1,34 @@
+{
+  "name": "@iosecret/storage",
+  "version": "1.0.5",
+  "description": "web 缓存工具函数",
+  "keywords": [
+    "storage"
+  ],
+  "private": false,
+  "author": "水逆",
+  "homepage": "https://github.com/iosecret/storage",
+  "license": "ISC",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc --project tsconfig.json --outDir dist/ --module ES2015",
+    "prepublishOnly": "npm run build"
+  },
+  "directories": {
+    "dist": "dist"
+  },
+  "files": [
+    "dist",
+    "README.MD"
+  ],
+  "bugs": {
+    "url": "https://github.com/iosecret/storage/issues"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.3.5"
+  },
+  "sideEffects": false
+}
